@@ -1,14 +1,15 @@
-html {
-    scroll-behavior: smooth;
-}
-/* Diseño general */
+/* ----------------------------
+   Diseño general
+---------------------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffffff; /* blanco */
+    background-color: #ffffff; /* fondo blanco */
 }
 
-/* Cabecera */
+/* ----------------------------
+   Cabecera
+---------------------------- */
 header {
     background-color: #1E90FF; /* azul */
     color: white;
@@ -16,33 +17,62 @@ header {
     text-align: center;
 }
 
-/* Menú */
+/* ----------------------------
+   Menú de navegación
+---------------------------- */
 nav {
     background-color: #28A745; /* verde */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white; /* texto blanco */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Secciones */
+/* ----------------------------
+   Secciones
+---------------------------- */
 section {
     padding: 40px;
     max-width: 900px;
     margin: auto;
 }
+
 h2 {
-    color: #1E90FF; /* azul */
+    color: #1E90FF; /* títulos azul */
 }
 
-/* Footer */
+/* ----------------------------
+   Footer
+---------------------------- */
 footer {
-    background-color: #222;
+    background-color: #28A745; /* verde */
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* ----------------------------
+   Efecto smooth scroll
+---------------------------- */
+html {
+    scroll-behavior: smooth;
 }
