@@ -1,9 +1,11 @@
+/* Diseño general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f2f2f2;
 }
 
+/* Cabecera */
 header {
     background-color: darkred;
     color: white;
@@ -11,22 +13,7 @@ header {
     text-align: center;
 }
 
-section {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    color: darkred;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+/* Menú */
 nav {
     background-color: #900;
     padding: 10px 0;
@@ -52,4 +39,23 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: darkred;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
