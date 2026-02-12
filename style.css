@@ -1,477 +1,338 @@
-:root{
-  /* ...lo que ya tienes... */
-  --topbar-bg: var(--blanco);
-  --header-bg: var(--azul);
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Asociación Toro de Cuerda de Carcabuey</title>
+<meta name="description" content="Web oficial de la Asociación Toro de Cuerda de Carcabuey. Noticias, eventos, galería y contacto." />
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<!-- Barra superior -->
+<div class="topbar">
+<div class="container topbar__inner">
+<div class="brand">
+<div class="brand__logo">
+<img src="assets/logo.png" alt="Logo Asociación Toro de Cuerda de Carcabuey">
+</div>
+        <div class="brand__text">
+          <strong>Asociación Toro de Cuerda</strong>
+          <span>Carcabuey</span>
+        </div>
+      </div>
+
+</div>
+<div class="topbar__links">
+<a href="#contacto" class="topbar__link">Contacto</a>
+<a href="#eventos" class="topbar__btn">Ver eventos</a>
+</div>
+</div>
+</div>
+
+<!-- Navegación (pegajosa) -->
+<header class="header">
+<div class="container header__inner">
+<nav class="nav" aria-label="Navegación principal">
+<a class="nav__item" href="#inicio" data-nav>Inicio</a>
+<a class="nav__item" href="#sobre" data-nav>Sobre nosotros</a>
+<a class="nav__item" href="#noticias" data-nav>Noticias</a>
+<a class="nav__item" href="#eventos" data-nav>Eventos</a>
+<a class="nav__item" href="#galeria" data-nav>Galería</a>
+<a class="nav__item" href="#contacto" data-nav>Contacto</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO / Portada -->
+<main>
+<section id="inicio" class="hero" style="--hero-img: url('assets/hero.jpg');">
+<div class="hero__overlay"></div>
+<div class="container hero__content">
+<p class="hero__kicker">Toro de cuerda • Tradición • Carcabuey</p>
+<h1 class="hero__title">Asociación Toro de Cuerda de Carcabuey</h1>
+<p class="hero__subtitle">
+Mantenemos viva una tradición emblemática desde el respeto, la cultura y el compromiso con el pueblo.
+</p>
+
+<div class="hero__cta">
+<a class="btn btn--primary" href="#eventos">Calendario</a>
+<a class="btn btn--ghost" href="#sobre">Conócenos</a>
+</div>
+
+<div class="hero__badges" aria-label="Destacados">
+<div class="badge">💚 Verde</div>
+<div class="badge">🤍 Blanco</div>
+<div class="badge">💙 Azul</div>
+</div>
+</div>
+</section>
+
+<!-- Bloque destacado (tipo “El rito”) -->
+<section class="section">
+<div class="container split">
+<div class="split__text">
+<h2 class="section__title">Toro de Cuerda, tradición de vida</h2>
+<p class="section__lead">
+Una manifestación cultural popular que une generaciones. Aquí encontrarás historia, noticias, calendario y galería.
+</p>
+<div class="pillrow">
+<span class="pill">Seguridad</span>
+<span class="pill">Tradición</span>
+<span class="pill">Cultura</span>
+<span class="pill">Comunidad</span>
+</div>
+</div>
+
+<div class="split__media">
+<img class="media" src="assets/destacado.jpg" alt="Imagen destacada del Toro de Cuerda" />
+</div>
+</div>
+</section>
+
+<!-- Sobre nosotros -->
+<section id="sobre" class="section section--alt">
+<div class="container">
+<h2 class="section__title">Sobre nosotros</h2>
+<p class="section__lead">
+Somos una asociación dedicada a promover y organizar actividades relacionadas con el Toro de Cuerda en Carcabuey,
+difundiendo su historia y valores.
+</p>
+
+<div class="cards">
+<article class="card">
+<h3>Historia</h3>
+<p>Un recorrido por la tradición local y la evolución del festejo en Carcabuey.</p>
+</article>
+<article class="card">
+<h3>La Asociación</h3>
+<p>Equipo, socios y colaboración con el municipio para conservar la cultura popular.</p>
+</article>
+<article class="card">
+<h3>Compromiso</h3>
+<p>Organización, seguridad y respeto como pilares de nuestra actividad.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Noticias (tarjetas como en la referencia) -->
+<section id="noticias" class="section">
+<div class="container">
+<div class="section__head">
+<h2 class="section__title">Últimas noticias</h2>
+<a class="link" href="#contacto">¿Quieres publicar un aviso? Escríbenos →</a>
+</div>
+
+<div class="grid3">
+<article class="post">
+<img src="assets/noticia1.jpg" alt="Imagen noticia 1" />
+<div class="post__body">
+<p class="post__meta">05 octubre, 2026</p>
+<h3 class="post__title">Anunciamos próximas actividades</h3>
+<p class="post__text">Publicaremos el calendario y novedades para socios y visitantes.</p>
+<a class="btn btn--mini" href="#contacto">Leer más</a>
+
+</div>
+</article>
+
+<article class="post">
+<img src="assets/noticia2.jpg" alt="Imagen noticia 2" />
+<div class="post__body">
+<p class="post__meta">20 septiembre, 2026</p>
+<h3 class="post__title">Información para participantes</h3>
+<p class="post__text">Recomendaciones y recordatorios sobre organización y seguridad.</p>
+<a class="btn btn--mini" href="#contacto">Leer más</a>
+
+</div>
+</article>
+
+<article class="post">
+<img src="assets/noticia3.jpg" alt="Imagen noticia 3" />
+<div class="post__body">
+<p class="post__meta">01 agosto, 2026</p>
+<h3 class="post__title">Galería actualizada</h3>
+<p class="post__text">Ya puedes ver nuevas fotos del último evento y actividades.</p>
+<a class="btn btn--mini" href="#contacto">Leer más</a>
+
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Eventos -->
+<section id="eventos" class="section section--alt">
+<div class="container">
+<h2 class="section__title">Eventos</h2>
+<p class="section__lead">Calendario orientativo. (Luego lo dejamos “bonito” con fechas reales y carteles.)</p>
+
+<div class="events">
+<div class="event">
+<div class="event__date">
+<span class="event__day">15</span>
+<span class="event__mon">FEB</span>
+</div>
+<div class="event__info">
+<h3>Presentación del calendario anual</h3>
+<p>Acto informativo y novedades de la asociación.</p>
+</div>
+</div>
+
+<div class="event">
+<div class="event__date">
+<span class="event__day">01</span>
+<span class="event__mon">JUL</span>
+</div>
+<div class="event__info">
+<h3>Toro de Cuerda en Carcabuey</h3>
+<p>Festejo principal. Información y horarios próximamente.</p>
+</div>
+</div>
+
+<div class="event">
+<div class="event__date">
+<span class="event__day">25</span>
+<span class="event__mon">AGO</span>
+</div>
+<div class="event__info">
+<h3>Jornada cultural y convivencia</h3>
+<p>Actividades para socios y visitantes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Galería -->
+<section id="galeria" class="section">
+<div class="container">
+<div class="section__head">
+<h2 class="section__title">Galería</h2>
+<p class="section__lead">Sube tus fotos a <code>assets/</code> y reemplaza estas.</p>
+</div>
+
+<div class="gallery">
+<img src="assets/galeria1.jpg" alt="Galería 1" />
+<img src="assets/galeria2.jpg" alt="Galería 2" />
+<img src="assets/galeria3.jpg" alt="Galería 3" />
+<img src="assets/galeria4.jpg" alt="Galería 4" />
+<img src="assets/galeria5.jpg" alt="Galería 5" />
+<img src="assets/galeria6.jpg" alt="Galería 6" />
+</div>
+</div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section section--alt">
+<div class="container">
+<h2 class="section__title">Contacto</h2>
+<p class="section__lead">
+Envíanos un mensaje. (Sin servidor, lo más simple es usar <strong>mailto</strong> o un servicio gratis tipo Formspree.)
+</p>
+
+<div class="contact">
+<div class="contact__box">
+<h3>Datos</h3>
+<p><strong>Email:</strong> <a class="link" href="mailto:contacto@torocarcabuey.org">contacto@torocarcabuey.org</a></p>
+<p><strong>Teléfono:</strong> <a class="link" href="tel:+34600000000">+34 600 000 000</a></p>
+<p><strong>Ubicación:</strong> Carcabuey (Córdoba)</p>
+</div>
+
+<form class="form" action="mailto:contacto@torocarcabuey.org" method="post" enctype="text/plain">
+<label>
+Nombre
+<input name="nombre" type="text" placeholder="Tu nombre" required />
+</label>
+<label>
+Email
+<input name="email" type="email" placeholder="tunombre@email.com" required />
+</label>
+<label>
+Asunto
+<input name="asunto" type="text" placeholder="Motivo del mensaje" />
+</label>
+<label>
+Mensaje
+<textarea name="mensaje" rows="5" placeholder="Escribe aquí..." required></textarea>
+</label>
+
+<button class="btn btn--primary" type="submit">Enviar</button>
+<p class="form__hint">Si tu navegador no abre el correo, luego lo cambiamos a Formspree (gratis).</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container footer__inner">
+<div>
+<strong>Asociación Toro de Cuerda de Carcabuey</strong>
+<p class="muted">© <span id="year"></span> • Todos los derechos reservados</p>
+</div>
+
+<div class="footer__links">
+<a class="link" href="#inicio">Inicio</a>
+<a class="link" href="#noticias">Noticias</a>
+<a class="link" href="#eventos">Eventos</a>
+<a class="link" href="#contacto">Contacto</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<!-- VISOR DE IMÁGENES GRANDE -->
+<div id="visor" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; justify-content:center; align-items:center;">
+<img id="imgGrande" style="max-width:90%; max-height:90%;">
+</div>
+
+<script>
+document.querySelectorAll(".gallery img").forEach(img => {
+img.onclick = () => {
+document.getElementById("visor").style.display = "flex";
+document.getElementById("imgGrande").src = img.src;
+};
+});
+
+document.getElementById("visor").onclick = () => {
+document.getElementById("visor").style.display = "none";
+};
+</script>
+<script>
+const navLinks = Array.from(document.querySelectorAll("[data-nav]"));
+const targets = navLinks
+.map(a => document.querySelector(a.getAttribute("href")))
+.filter(Boolean);
+
+function setActive() {
+const y = window.scrollY + 140; // margen por el menú sticky
+let currentId = null;
+
+for (const el of targets) {
+const top = el.offsetTop;
+const bottom = top + el.offsetHeight;
+if (y >= top && y < bottom) {
+currentId = el.id;
+break;
 }
-  --azul:#1E90FF;
-  --azul-osc:#136fd0;
-  --verde:#28A745;
-  --verde-osc:#1f8a39;
-  --blanco:#ffffff;
-  --fondo:#f6f8fb;
-  --texto:#132033;
-  --muted:#5b677a;
-  --borde:rgba(19,32,51,.12);
-  --shadow:0 10px 25px rgba(19,32,51,.10);
-  --radius:16px;
 }
 
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color:var(--texto);
-  background:var(--blanco);
-  line-height:1.6;
+// Si estás arriba del todo, marca "inicio"
+if (!currentId && window.scrollY < 200) currentId = "inicio";
+
+navLinks.forEach(a => {
+const isActive = a.getAttribute("href") === "#" + currentId;
+a.classList.toggle("activo", isActive);
+});
 }
 
-img{ max-width:100%; display:block; }
-a{ color:inherit; text-decoration:none; }
-code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px; }
+window.addEventListener("scroll", setActive);
+window.addEventListener("load", setActive);
+</script>
 
-.container{
-  width:min(1100px, calc(100% - 32px));
-  margin:0 auto;
-}
-
-/* Topbar */
-.topbar{
- .topbar{
-  background: var(--topbar-bg);
-  color: var(--azul);
-}
-.topbar__inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 20px 10px 0px; /* sin margen izquierda */
-}
-.brand{
-  margin-left:-25px;
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.brand__logo{
-  width:auto;
-  height:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background: transparent;
-  border:none;
-}
-.brand__logo img{
-  height:120px;
-  width:auto;
-  transform: scale(2.0);
-  transform-origin:left center;
-}
-.brand__text{
-  display:flex;
-  flex-direction:column;
-  line-height:1.1;
-}
-.brand__text span{ font-size:.92rem; opacity:.9; }
-
-.topbar__links{
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
-.topbar__link{
-  opacity:.95;
-  padding:8px 10px;
-  border-radius:10px;
-}
-.topbar__link:hover{ background:rgba(255,255,255,.12); }
-
-.topbar__btn{
-  background:var(--verde);
-  color:var(--blanco);
-  padding:8px 12px;
-  border-radius:12px;
-  font-weight:700;
-}
-.topbar__btn:hover{ background:var(--verde-osc); }
-
-/* Header / Nav sticky */
-.header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background: var(--header-bg);
-  border-bottom:1px solid var(--borde);
-}
-.header__inner{
-  display:flex;
-  justify-content:center;
-  padding:10px 0;
-}
-.nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  justify-content:center;
-}
-.nav__item{
-  padding:10px 12px;
-  border-radius:12px;
-  font-weight:700;
-  color:white;
-  position: relative;
-}
-.nav__item:hover{
-  background:rgba(30,144,255,.08);
-  color:var(--azul-osc);
-}
-
-/* Hero */
-.hero{
-  position:relative;
-  min-height:64vh;
-  display:grid;
-  align-items:center;
-  background-image: var(--hero-img);
-  background-size:cover;
-  background-position:center;
-}
-.hero__overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg, rgba(19,32,51,.75), rgba(19,32,51,.25));
-}
-.hero__content{
-  position:relative;
-  padding:58px 0;
-  color:var(--blanco);
-}
-.hero__kicker{
-  display:inline-block;
-  background:rgba(40,167,69,.18);
-  border:1px solid rgba(40,167,69,.45);
-  padding:6px 10px;
-  border-radius:999px;
-  font-weight:700;
-  letter-spacing:.2px;
-}
-.hero__title{
-  margin:14px 0 6px;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height:1.12;
-}
-.hero__subtitle{
-  max-width: 58ch;
-  font-size:1.05rem;
-  opacity:.95;
-}
-
-.hero__cta{
-  margin-top:18px;
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 16px;
-  border-radius:14px;
-  font-weight:800;
-  border:1px solid transparent;
-  cursor:pointer;
-}
-.btn--primary{
-  background:var(--verde);
-  color:var(--blanco);
-}
-.btn--primary:hover{ background:var(--verde-osc); }
-.btn--ghost{
-  background:rgba(255,255,255,.10);
-  border-color:rgba(255,255,255,.30);
-  color:var(--blanco);
-}
-.btn--ghost:hover{ background:rgba(255,255,255,.16); }
-
-.hero__badges{
-  margin-top:18px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.badge{
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.22);
-  padding:8px 10px;
-  border-radius:999px;
-  font-weight:700;
-}
-
-/* Sections */
-.section{
-  padding:56px 0;
-}
-.section--alt{
-  background:var(--fondo);
-  border-top:1px solid var(--borde);
-  border-bottom:1px solid var(--borde);
-}
-.section__head{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:16px;
-  flex-wrap:wrap;
-}
-.section__title{
-  margin:0 0 8px;
-  color:var(--azul-osc);
-  font-size: clamp(1.4rem, 2.4vw, 2rem);
-}
-.section__lead{
-  margin:0;
-  color:var(--muted);
-  max-width: 75ch;
-}
-.link{
-  color:var(--azul-osc);
-  font-weight:800;
-}
-.link:hover{ text-decoration:underline; }
-.muted{ color:var(--muted); }
-
-/* Split block */
-.split{
-  display:grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap:22px;
-  align-items:center;
-}
-.split__media .media{
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border:1px solid var(--borde);
-}
-.pillrow{
-  margin-top:14px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.pill{
-  background:rgba(30,144,255,.08);
-  border:1px solid rgba(30,144,255,.18);
-  padding:8px 10px;
-  border-radius:999px;
-  font-weight:800;
-  color:var(--azul-osc);
-}
-
-/* Cards */
-.cards{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:14px;
-}
-.card{
-  background:var(--blanco);
-  border:1px solid var(--borde);
-  border-radius: var(--radius);
-  padding:16px;
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-.card h3{ margin:0 0 6px; }
-.card p{ margin:0; color:var(--muted); }
-
-/* News grid */
-.grid3{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:14px;
-}
-.post{
-  border-radius: var(--radius);
-  overflow:hidden;
-  border:1px solid var(--borde);
-  background:var(--blanco);
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-.post img{
-  width:100%;
-  height:190px;
-  object-fit:cover;
-}
-.post__body{ padding:14px; }
-.post__meta{ margin:0 0 6px; color:var(--muted); font-weight:700; font-size:.92rem; }
-.post__title{ margin:0 0 6px; }
-.post__text{ margin:0; color:var(--muted); }
-
-/* Events */
-.events{
-  margin-top:18px;
-  display:grid;
-  gap:12px;
-}
-.event{
-  display:grid;
-  grid-template-columns: 80px 1fr;
-  gap:14px;
-  background:var(--blanco);
-  border:1px solid var(--borde);
-  border-radius: var(--radius);
-  padding:14px;
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-.event__date{
-  border-radius:14px;
-  background:rgba(40,167,69,.10);
-  border:1px solid rgba(40,167,69,.25);
-  display:grid;
-  place-items:center;
-  padding:10px;
-}
-.event__day{
-  font-weight:900;
-  font-size:1.6rem;
-  color:var(--verde-osc);
-  line-height:1;
-}
-.event__mon{
-  font-weight:900;
-  letter-spacing:.5px;
-  color:var(--verde-osc);
-  font-size:.9rem;
-}
-.event__info h3{ margin:0 0 4px; }
-.event__info p{ margin:0; color:var(--muted); }
-
-/* Gallery */
-.gallery{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap:10px;
-}
-.gallery img{
-  width:100%;
-  aspect-ratio: 1 / 1;
-  object-fit:cover;
-  border-radius:14px;
-  border:1px solid var(--borde);
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-
-/* Contact */
-.contact{
-  margin-top:18px;
-  display:grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap:14px;
-}
-.contact__box{
-  background:var(--blanco);
-  border:1px solid var(--borde);
-  border-radius: var(--radius);
-  padding:16px;
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-.form{
-  background:var(--blanco);
-  border:1px solid var(--borde);
-  border-radius: var(--radius);
-  padding:16px;
-  box-shadow: 0 6px 18px rgba(19,32,51,.06);
-}
-label{
-  display:block;
-  font-weight:800;
-  margin: 0 0 10px;
-}
-input, textarea{
-  width:100%;
-  margin-top:6px;
-  border:1px solid var(--borde);
-  border-radius:12px;
-  padding:12px;
-  font: inherit;
-}
-input:focus, textarea:focus{
-  outline:2px solid rgba(30,144,255,.25);
-  border-color: rgba(30,144,255,.45);
-}
-.form__hint{
-  margin:10px 0 0;
-  color:var(--muted);
-  font-size:.92rem;
-}
-
-/* Footer */
-.footer{
-  background: #0f1726;
-  color: var(--blanco);
-  padding:26px 0;
-}
-.footer__inner{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:16px;
-  flex-wrap:wrap;
-}
-.footer__links{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-/* Responsive */
-@media (max-width: 900px){
-  .split{ grid-template-columns: 1fr; }
-  .cards{ grid-template-columns: 1fr; }
-  .grid3{ grid-template-columns: 1fr; }
-  .gallery{ grid-template-columns: repeat(3, 1fr); }
-  .contact{ grid-template-columns: 1fr; }
-}
-@media (max-width: 520px){
-  .gallery{ grid-template-columns: repeat(2, 1fr); }
-  .nav__item{ padding:8px 10px; }
-}
-.btn--mini{
-  padding:10px 12px;
-  border-radius:12px;
-  font-weight:900;
-  background:rgba(30,144,255,.10);
-  border:1px solid rgba(30,144,255,.20);
-  color:#136fd0;
-}
-
-.btn--mini:hover{
-  background:rgba(30,144,255,.16);
-}
-.nav__item.activo{
-  background:#1E90FF;
-  color:white !important;
-  border-radius:10px;
-}
-section[id]{
-  scroll-margin-top: 110px;
-}
-.nav__item.activo{
-  background: rgba(30,144,255,.12);
-  color: var(--azul-osc) !important;
-  border: 1px solid rgba(30,144,255,.22);
-}
-.post, .card, .event, .contact__box, .form{
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.post:hover, .card:hover, .event:hover, .contact__box:hover, .form:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
+</body>
+</html>
