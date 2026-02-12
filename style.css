@@ -455,3 +455,8 @@ input:focus, textarea:focus{
 section[id]{
   scroll-margin-top: 110px;
 }
+.nav__item.activo{
+  background: rgba(30,144,255,.12);
+  color: var(--azul-osc) !important;
+  border: 1px solid rgba(30,144,255,.22);
+}
