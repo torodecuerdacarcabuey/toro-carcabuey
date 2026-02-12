@@ -1,86 +1,280 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Asociación Toro de Cuerda de Carcabuey</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asociación Toro de Cuerda de Carcabuey</title>
+  <meta name="description" content="Web oficial de la Asociación Toro de Cuerda de Carcabuey. Noticias, eventos, galería y contacto." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">🐂</div>
+        <div class="brand__text">
+          <strong>Asociación Toro de Cuerda</strong>
+          <span>Carcabuey</span>
+        </div>
+      </div>
 
-<!-- Header -->
-<header id="inicio">
-    <h1>Asociación Toro de Cuerda de Carcabuey</h1>
-    <p>Tradición, cultura y pasión</p>
-</header>
-
-<!-- Menú de navegación -->
-<nav>
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-        <li><a href="#noticias">Noticias</a></li>
-        <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</nav>
-
-<!-- Inicio con imagen destacada -->
-<section id="inicio" class="inicio-seccion">
-    <img src="imagen-destacada.jpg" alt="Toro de Cuerda" class="imagen-principal">
-    <p>Bienvenidos a la web oficial de la Asociación Toro de Cuerda de Carcabuey</p>
-</section>
-
-<!-- Sobre nosotros -->
-<section id="sobre-nosotros">
-    <h2>Sobre nosotros</h2>
-    <p>
-        La Asociación Toro de Cuerda de Carcabuey trabaja para mantener viva
-        una de las tradiciones más emblemáticas de nuestro pueblo.
-    </p>
-</section>
-
-<!-- Noticias -->
-<section id="noticias">
-    <h2>Noticias</h2>
-    <ul>
-        <li>Se acerca el evento del Toro de Cuerda 2026</li>
-        <li>Reunión de socios el próximo mes</li>
-        <li>Nuevas medidas de seguridad para los festejos</li>
-    </ul>
-</section>
-
-<!-- Eventos -->
-<section id="eventos">
-    <h2>Eventos</h2>
-    <ul>
-        <li>15 Febrero 2026: Presentación del calendario anual</li>
-        <li>1 Julio 2026: Toro de Cuerda en Carcabuey</li>
-        <li>25 Agosto 2026: Fiesta local con actividades culturales</li>
-    </ul>
-</section>
-
-<!-- Galería -->
-<section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria-imagenes">
-        <img src="foto1.jpg" alt="Toro en la calle">
-        <img src="foto2.jpg" alt="Evento de la asociación">
-        <img src="foto3.jpg" alt="Participantes celebrando">
+      <div class="topbar__links">
+        <a href="#contacto" class="topbar__link">Contacto</a>
+        <a href="#eventos" class="topbar__btn">Ver eventos</a>
+      </div>
     </div>
-</section>
+  </div>
 
-<!-- Contacto -->
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Correo: contacto@torocarcabuey.org</p>
-    <p>Teléfono: +34 600 000 000</p>
-</section>
+  <!-- Navegación (pegajosa) -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__item" href="#inicio">Inicio</a>
+        <a class="nav__item" href="#sobre">Sobre nosotros</a>
+        <a class="nav__item" href="#noticias">Noticias</a>
+        <a class="nav__item" href="#eventos">Eventos</a>
+        <a class="nav__item" href="#galeria">Galería</a>
+        <a class="nav__item" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Asociación Toro de Cuerda de Carcabuey</p>
-</footer>
+  <!-- HERO / Portada -->
+  <main id="inicio">
+    <section class="hero" style="--hero-img: url('assets/hero.jpg');">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__kicker">Toro de cuerda • Tradición • Carcabuey</p>
+        <h1 class="hero__title">Asociación Toro de Cuerda de Carcabuey</h1>
+        <p class="hero__subtitle">
+          Mantenemos viva una tradición emblemática desde el respeto, la cultura y el compromiso con el pueblo.
+        </p>
 
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#eventos">Calendario</a>
+          <a class="btn btn--ghost" href="#sobre">Conócenos</a>
+        </div>
+
+        <div class="hero__badges" aria-label="Destacados">
+          <div class="badge">💙 Azul</div>
+          <div class="badge">🤍 Blanco</div>
+          <div class="badge">💚 Verde</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloque destacado (tipo “El rito”) -->
+    <section class="section">
+      <div class="container split">
+        <div class="split__text">
+          <h2 class="section__title">Toro de Cuerda, tradición de vida</h2>
+          <p class="section__lead">
+            Una manifestación cultural popular que une generaciones. Aquí encontrarás historia, noticias, calendario y galería.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Seguridad</span>
+            <span class="pill">Tradición</span>
+            <span class="pill">Cultura</span>
+            <span class="pill">Comunidad</span>
+          </div>
+        </div>
+
+        <div class="split__media">
+          <img class="media" src="assets/destacado.jpg" alt="Imagen destacada del Toro de Cuerda" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="sobre" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Sobre nosotros</h2>
+        <p class="section__lead">
+          Somos una asociación dedicada a promover y organizar actividades relacionadas con el Toro de Cuerda en Carcabuey,
+          difundiendo su historia y valores.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Historia</h3>
+            <p>Un recorrido por la tradición local y la evolución del festejo en Carcabuey.</p>
+          </article>
+          <article class="card">
+            <h3>La Asociación</h3>
+            <p>Equipo, socios y colaboración con el municipio para conservar la cultura popular.</p>
+          </article>
+          <article class="card">
+            <h3>Compromiso</h3>
+            <p>Organización, seguridad y respeto como pilares de nuestra actividad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noticias (tarjetas como en la referencia) -->
+    <section id="noticias" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Últimas noticias</h2>
+          <a class="link" href="#contacto">¿Quieres publicar un aviso? Escríbenos →</a>
+        </div>
+
+        <div class="grid3">
+          <article class="post">
+            <img src="assets/noticia1.jpg" alt="Imagen noticia 1" />
+            <div class="post__body">
+              <p class="post__meta">05 octubre, 2026</p>
+              <h3 class="post__title">Anunciamos próximas actividades</h3>
+              <p class="post__text">Publicaremos el calendario y novedades para socios y visitantes.</p>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="assets/noticia2.jpg" alt="Imagen noticia 2" />
+            <div class="post__body">
+              <p class="post__meta">20 septiembre, 2026</p>
+              <h3 class="post__title">Información para participantes</h3>
+              <p class="post__text">Recomendaciones y recordatorios sobre organización y seguridad.</p>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="assets/noticia3.jpg" alt="Imagen noticia 3" />
+            <div class="post__body">
+              <p class="post__meta">01 agosto, 2026</p>
+              <h3 class="post__title">Galería actualizada</h3>
+              <p class="post__text">Ya puedes ver nuevas fotos del último evento y actividades.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section id="eventos" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Eventos</h2>
+        <p class="section__lead">Calendario orientativo. (Luego lo dejamos “bonito” con fechas reales y carteles.)</p>
+
+        <div class="events">
+          <div class="event">
+            <div class="event__date">
+              <span class="event__day">15</span>
+              <span class="event__mon">FEB</span>
+            </div>
+            <div class="event__info">
+              <h3>Presentación del calendario anual</h3>
+              <p>Acto informativo y novedades de la asociación.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event__date">
+              <span class="event__day">01</span>
+              <span class="event__mon">JUL</span>
+            </div>
+            <div class="event__info">
+              <h3>Toro de Cuerda en Carcabuey</h3>
+              <p>Festejo principal. Información y horarios próximamente.</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event__date">
+              <span class="event__day">25</span>
+              <span class="event__mon">AGO</span>
+            </div>
+            <div class="event__info">
+              <h3>Jornada cultural y convivencia</h3>
+              <p>Actividades para socios y visitantes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Galería</h2>
+          <p class="section__lead">Sube tus fotos a <code>assets/</code> y reemplaza estas.</p>
+        </div>
+
+        <div class="gallery">
+          <img src="assets/galeria1.jpg" alt="Galería 1" />
+          <img src="assets/galeria2.jpg" alt="Galería 2" />
+          <img src="assets/galeria3.jpg" alt="Galería 3" />
+          <img src="assets/galeria4.jpg" alt="Galería 4" />
+          <img src="assets/galeria5.jpg" alt="Galería 5" />
+          <img src="assets/galeria6.jpg" alt="Galería 6" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__lead">
+          Envíanos un mensaje. (Sin servidor, lo más simple es usar <strong>mailto</strong> o un servicio gratis tipo Formspree.)
+        </p>
+
+        <div class="contact">
+          <div class="contact__box">
+            <h3>Datos</h3>
+            <p><strong>Email:</strong> <a class="link" href="mailto:contacto@torocarcabuey.org">contacto@torocarcabuey.org</a></p>
+            <p><strong>Teléfono:</strong> <a class="link" href="tel:+34600000000">+34 600 000 000</a></p>
+            <p><strong>Ubicación:</strong> Carcabuey (Córdoba)</p>
+          </div>
+
+          <form class="form" action="mailto:contacto@torocarcabuey.org" method="post" enctype="text/plain">
+            <label>
+              Nombre
+              <input name="nombre" type="text" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" placeholder="tunombre@email.com" required />
+            </label>
+            <label>
+              Asunto
+              <input name="asunto" type="text" placeholder="Motivo del mensaje" />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="5" placeholder="Escribe aquí..." required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p class="form__hint">Si tu navegador no abre el correo, luego lo cambiamos a Formspree (gratis).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Asociación Toro de Cuerda de Carcabuey</strong>
+        <p class="muted">© <span id="year"></span> • Todos los derechos reservados</p>
+      </div>
+
+      <div class="footer__links">
+        <a class="link" href="#inicio">Inicio</a>
+        <a class="link" href="#noticias">Noticias</a>
+        <a class="link" href="#eventos">Eventos</a>
+        <a class="link" href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
