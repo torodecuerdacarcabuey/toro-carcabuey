@@ -1,4 +1,8 @@
 :root{
+  /* ...lo que ya tienes... */
+  --topbar-bg: var(--blanco);
+  --header-bg: var(--azul);
+}
   --azul:#1E90FF;
   --azul-osc:#136fd0;
   --verde:#28A745;
@@ -33,8 +37,9 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 
 /* Topbar */
 .topbar{
-  background:white;
-  color:#1E90FF;
+ .topbar{
+  background: var(--topbar-bg);
+  color: var(--azul);
 }
 .topbar__inner{
   display:flex;
@@ -95,11 +100,11 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 
 /* Header / Nav sticky */
 .header{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background:#1E90FF;
-  border-bottom:1px solid rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:50;
+  background: var(--header-bg);
+  border-bottom:1px solid var(--borde);
 }
 .header__inner{
   display:flex;
