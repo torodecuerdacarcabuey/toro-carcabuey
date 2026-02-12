@@ -59,7 +59,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 .brand__logo img{
   height:120px;
   width:auto;
-  transform: scale(2.3);
+  transform: scale(2.5);
   transform-origin:left center;
 }
 .brand__text{
