@@ -447,3 +447,8 @@ input:focus, textarea:focus{
 .btn--mini:hover{
   background:rgba(30,144,255,.16);
 }
+.nav__item.activo{
+  background:#1E90FF;
+  color:white !important;
+  border-radius:10px;
+}
