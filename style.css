@@ -476,3 +476,23 @@ section[id]{
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
+.logo-top{
+  height:120px;
+  transform: scale(1.8);
+  transform-origin:left center;
+}
+
+.brand{
+  margin-left:-35px;
+}
+
+.topbar{
+  background:white;
+}
+
+.topbar__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:5px 20px 5px 0px;
+}
