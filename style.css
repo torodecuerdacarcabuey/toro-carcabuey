@@ -98,8 +98,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,255,255,.95);
-  backdrop-filter: blur(10px);
+  background:#1E90FF;
   border-bottom:1px solid rgba(0,0,0,.08);
 }
 .header__inner{
