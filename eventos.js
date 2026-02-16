@@ -18,4 +18,10 @@ const EVENTOS = [
     titulo: "XXI Congreso Nacional de Toro con Cuerda.",
     descripcion: "Amposta.",
   },
+   {
+    dia: "12",
+    mes: "JUL",
+    titulo: "DÍA DEL SOCIO",
+    descripcion: "Por cuarto año consecutivo celebramos el dia de todos los socios con la tradicional cgada de la burra.",
+  },
 ];
