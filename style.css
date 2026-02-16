@@ -34,7 +34,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 /* Topbar */
 .topbar{
   background:white;
-  padding:10px 0;
+  padding:8px 0;
   border-bottom:1px solid rgba(0,0,0,.08);
 }
 .topbar__inner{
@@ -42,6 +42,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   align-items:center;
   justify-content:space-between;
   padding:0 20px;
+  max-height:90px;
 }
 }
 .brand{
@@ -59,8 +60,9 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   border:none;
 }
 .logo-top{
-  height:90px;
+  height:70px;
   width:auto;
+  transform:none;
 }
 }
 .brand__text{
