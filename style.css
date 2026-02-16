@@ -434,3 +434,15 @@ input:focus, textarea:focus{
   .gallery{ grid-template-columns: repeat(2, 1fr); }
   .nav__item{ padding:8px 10px; }
 }
+.btn--mini{
+  padding:10px 12px;
+  border-radius:12px;
+  font-weight:900;
+  background:rgba(30,144,255,.10);
+  border:1px solid rgba(30,144,255,.20);
+  color:#136fd0;
+}
+
+.btn--mini:hover{
+  background:rgba(30,144,255,.16);
+}
