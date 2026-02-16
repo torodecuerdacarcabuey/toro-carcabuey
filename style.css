@@ -91,12 +91,12 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 
 /* Header / Nav sticky */
 .header{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(255,255,255,.92);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.95);
   backdrop-filter: blur(10px);
-  border-bottom:1px solid var(--borde);
+  border-bottom:1px solid rgba(0,0,0,.08);
 }
 .header__inner{
   display:flex;
