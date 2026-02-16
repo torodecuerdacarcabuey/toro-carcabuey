@@ -116,7 +116,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   padding:10px 12px;
   border-radius:12px;
   font-weight:700;
-  color:var(--texto);
+  color:white;
   position: relative;
 }
 .nav__item:hover{
