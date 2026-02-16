@@ -298,29 +298,36 @@ document.getElementById("visor").onclick = () => {
   document.getElementById("visor").style.display = "none";
 };
 </script>
-  <script>
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll("[data-nav]");
+ <script>
+  const navLinks = Array.from(document.querySelectorAll("[data-nav]"));
+  const targets = navLinks
+    .map(a => document.querySelector(a.getAttribute("href")))
+    .filter(Boolean);
 
-window.addEventListener("scroll", () => {
-  let current = "";
+  function setActive() {
+    const y = window.scrollY + 140; // margen por el menú sticky
+    let currentId = null;
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
-    const sectionHeight = section.offsetHeight;
-
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
+    for (const el of targets) {
+      const top = el.offsetTop;
+      const bottom = top + el.offsetHeight;
+      if (y >= top && y < bottom) {
+        currentId = el.id;
+        break;
+      }
     }
-  });
 
-  navLinks.forEach(link => {
-    link.classList.remove("activo");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("activo");
-    }
-  });
-});
+    // Si estás arriba del todo, marca "inicio"
+    if (!currentId && window.scrollY < 200) currentId = "inicio";
+
+    navLinks.forEach(a => {
+      const isActive = a.getAttribute("href") === "#" + currentId;
+      a.classList.toggle("activo", isActive);
+    });
+  }
+
+  window.addEventListener("scroll", setActive);
+  window.addEventListener("load", setActive);
 </script>
 </body>
 </html>
