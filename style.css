@@ -468,3 +468,20 @@ section[id]{
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
+.nav__item::after{
+  content:"";
+  position:absolute;
+  left:12px;
+  right:12px;
+  bottom:6px;
+  height:3px;
+  border-radius:999px;
+  background: var(--verde);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .18s ease;
+}
+
+.nav__item.activo::after{
+  transform: scaleX(1);
+}
