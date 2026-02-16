@@ -529,3 +529,19 @@ section[id]{
   max-height:60px !important;
   transform:none !important;
 }
+.pagehead{
+  background: var(--fondo);
+  border-bottom: 1px solid var(--borde);
+  padding: 28px 0;
+}
+
+.pagehead h1{
+  margin: 0 0 6px;
+  color: var(--azul-osc);
+}
+
+.pagehead p{
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
