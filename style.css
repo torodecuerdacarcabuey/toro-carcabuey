@@ -58,11 +58,9 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   background: transparent;
   border:none;
 }
-.brand__logo img{
-  height:120px;
+.logo-top{
+  height:90px;
   width:auto;
-  transform: scale(2.3);
-  transform-origin:left center;
 }
 }
 .brand__text{
