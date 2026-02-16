@@ -490,3 +490,35 @@ section[id]{
 section[id]{
   scroll-margin-top: 110px;
 }
+/* ===== FIX TOPBAR: tamaño compacto sí o sí ===== */
+.topbar{
+  background:#fff !important;
+  border-bottom:1px solid rgba(0,0,0,.08) !important;
+  padding:0 !important;
+}
+
+.topbar__inner{
+  height:84px !important;          /* altura fija */
+  max-height:84px !important;
+  padding:10px 20px !important;    /* aire normal */
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  overflow:hidden !important;      /* nada se sale */
+}
+
+/* Logo superior: tamaño controlado */
+.logo-top{
+  height:60px !important;
+  width:auto !important;
+  max-height:60px !important;
+  display:block !important;
+}
+
+/* Si tienes el logo dentro de .brand__logo img también lo capamos */
+.brand__logo img{
+  height:60px !important;
+  width:auto !important;
+  max-height:60px !important;
+  transform:none !important;
+}
