@@ -49,15 +49,13 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   gap:10px;
 }
 .brand__logo{
-  width:140px;
-  height:140px;
+  width:auto;
+  height:auto;
   display:flex;
   align-items:center;
   justify-content:center;
   background: transparent;
-  border: none;
-  border-radius:0;
-  box-shadow:none;
+  border:none;
 }
 .brand__logo img{
   width:180px;
