@@ -454,3 +454,16 @@ input:focus, textarea:focus{
 section[id]{
   scroll-margin-top: 110px;
 }
+.nav__item.activo{
+  background: rgba(30,144,255,.12);
+  color: var(--azul-osc) !important;
+  border: 1px solid rgba(30,144,255,.22);
+}
+.post, .card, .event, .contact__box, .form{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.post:hover, .card:hover, .event:hover, .contact__box:hover, .form:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
