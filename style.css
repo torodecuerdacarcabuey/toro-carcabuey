@@ -625,3 +625,50 @@ section[id]{
   border: 0;
   display: block;
 }
+/* ===== FIX Eventos (alineación/anchos) ===== */
+#eventsList{
+  width:100%;
+  margin-top:18px;
+  display:grid;
+  gap:12px;
+}
+
+#eventsList .event{
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns: 80px 1fr;
+  gap:14px;
+  background:var(--blanco);
+  border:1px solid var(--borde);
+  border-radius: var(--radius);
+  padding:14px;
+  box-shadow: 0 6px 18px rgba(19,32,51,.06);
+}
+
+#eventsList .event__date{
+  border-radius:14px;
+  background:rgba(40,167,69,.10);
+  border:1px solid rgba(40,167,69,.25);
+  display:grid;
+  place-items:center;
+  padding:10px;
+}
+
+#eventsList .event__day{
+  font-weight:900;
+  font-size:1.6rem;
+  color:var(--verde-osc);
+  line-height:1;
+}
+
+#eventsList .event__mon{
+  font-weight:900;
+  letter-spacing:.5px;
+  color:var(--verde-osc);
+  font-size:.9rem;
+}
+
+#eventsList .event__info h3{ margin:0 0 4px; }
+#eventsList .event__info p{ margin:0; color:var(--muted); }
