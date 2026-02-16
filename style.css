@@ -33,8 +33,8 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 
 /* Topbar */
 .topbar{
-  background:var(--azul);
-  color:var(--blanco);
+  background:white;
+  color:#1E90FF;
 }
 .topbar__inner{
   display:flex;
