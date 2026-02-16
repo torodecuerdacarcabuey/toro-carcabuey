@@ -59,9 +59,10 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   border:none;
 }
 .logo-top{
-  height:95px !important;
+  height:70px !important;
   width:auto;
-  display:block;
+  transform: scale(2.2);
+  transform-origin:left center;
 }
 }
 .brand__text{
