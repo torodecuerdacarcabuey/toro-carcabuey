@@ -34,7 +34,8 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 /* Topbar */
 .topbar{
   background:white;
-  color:#1E90FF;
+  padding:10px 0;
+  border-bottom:1px solid rgba(0,0,0,.08);
 }
 .topbar__inner{
   display:flex;
