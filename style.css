@@ -40,7 +40,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:10px 20px;
+  padding:10px 10px 10px 0px;
 }
 }
 .brand{
