@@ -97,8 +97,10 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   position: sticky;
   top:0;
   z-index:50;
-  background:#1E90FF;
-  margin-top:0px;
+  background:#2d86d6;
+  height:55px;
+  display:flex;
+  align-items:center;
 }
 .header__inner{
   display:flex;
@@ -111,6 +113,10 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   gap:10px;
   justify-content:center;
   padding:8px 0;
+  width:100%;
+display:flex;
+justify-content:center;
+gap:30px;
 }
 .nav__item{
   padding:10px 12px;
