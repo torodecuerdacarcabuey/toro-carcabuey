@@ -41,8 +41,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:10px 10px 10px 0px;
-  margin-left:-20px;
+  padding:0 20px;
 }
 }
 .brand{
@@ -95,10 +94,10 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 /* Header / Nav sticky */
 .header{
   position: sticky;
-  top: 0;
-  z-index: 50;
+  top:0;
+  z-index:50;
   background:#1E90FF;
-  border-bottom:1px solid rgba(0,0,0,.08);
+  margin-top:0px;
 }
 .header__inner{
   display:flex;
@@ -110,6 +109,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   flex-wrap:wrap;
   gap:10px;
   justify-content:center;
+  padding:8px 0;
 }
 .nav__item{
   padding:10px 12px;
