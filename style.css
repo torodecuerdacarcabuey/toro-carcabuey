@@ -61,7 +61,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
 .logo-top{
   height:70px !important;
   width:auto;
-  transform: scale(2.2);
+  transform: scale(2.4);
   transform-origin:left center;
 }
 }
