@@ -305,5 +305,23 @@ document.getElementById("visor").onclick = () => {
   window.addEventListener("scroll", setActive);
   window.addEventListener("load", setActive);
 </script>
+  <script src="eventos.js"></script>
+<script>
+  const cont = document.getElementById("eventsList");
+  if (cont && typeof EVENTOS !== "undefined") {
+    cont.innerHTML = EVENTOS.map(ev => `
+      <div class="event">
+        <div class="event__date">
+          <span class="event__day">${ev.dia}</span>
+          <span class="event__mon">${ev.mes}</span>
+        </div>
+        <div class="event__info">
+          <h3>${ev.titulo}</h3>
+          <p>${ev.descripcion}</p>
+        </div>
+      </div>
+    `).join("");
+  }
+</script>
 </body>
 </html>
