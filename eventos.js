@@ -24,4 +24,16 @@ const EVENTOS = [
     titulo: "DÍA DEL SOCIO",
     descripcion: "Por cuarto año consecutivo celebramos el dia de todos los socios con la tradicional cgada de la burra.",
   },
+   {
+    dia: "22",
+    mes: "AGOST",
+    titulo: "TORO DE CUERDA",
+    descripcion: "En honor a Mª Santisima de la Aurora",
+  },
+   {
+    dia: "5",
+    mes: "SEPT",
+    titulo: "TORO DE CUERDA",
+    descripcion: "En honor a Mª Santisima deL Castillo",
+  },
 ];
