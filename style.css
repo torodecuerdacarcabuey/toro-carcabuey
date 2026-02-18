@@ -126,8 +126,8 @@ gap:30px;
   position: relative;
 }
 .nav__item:hover{
-  background: rgba(255,255,255,.15);
-  color: #ffffff;
+  background: rgba(255,255,255,.12);
+  color: #fff;
 }
 
 /* Hero */
