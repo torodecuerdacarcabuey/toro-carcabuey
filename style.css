@@ -43,7 +43,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   justify-content:space-between;
   padding:0 20px;
 }
-}
+
 .brand{
   display:flex;
   align-items:center;
@@ -63,7 +63,7 @@ code{ background:rgba(30,144,255,.08); padding:.15rem .35rem; border-radius:8px;
   width:auto;
   display:block;
 }
-}
+
 .brand__text{
   display:flex;
   flex-direction:column;
@@ -124,6 +124,7 @@ gap:30px;
   font-weight:700;
   color:white;
   position: relative;
+}
 .nav__item:hover{
   background: rgba(255,255,255,.15);
   color: #ffffff;
@@ -454,43 +455,22 @@ input:focus, textarea:focus{
 
 .btn--mini:hover{
   background:rgba(30,144,255,.16);
-/* ===== NAV: item activo visible en barra azul ===== */
-.nav__item.activo{
-  background: rgba(255,255,255,.18);
-  color: #fff !important;
-  border: 1px solid rgba(255,255,255,.35);
-  border-radius:12px;
 }
 
-/* Subrayado del activo (más visible que el verde) */
-.nav__item::after{
-  content:"";
-  position:absolute;
-  left:12px;
-  right:12px;
-  bottom:6px;
-  height:3px;
-  border-radius:999px;
-  background: #ffd000; /* amarillo pro */
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .18s ease;
-}
-.nav__item.activo::after{
-  transform: scaleX(1);
-}
-
-section[id]{
-  scroll-margin-top: 110px;
-
+/* Animación suave en tarjetas */
 .post, .card, .event, .contact__box, .form{
   transition: transform .15s ease, box-shadow .15s ease;
 }
-
 .post:hover, .card:hover, .event:hover, .contact__box:hover, .form:hover{
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
+
+/* ===== NAV: activo bien visible en barra azul ===== */
+.nav__item.activo{
+  color:#fff !important;
+}
+
 .nav__item::after{
   content:"";
   position:absolute;
@@ -499,17 +479,17 @@ section[id]{
   bottom:6px;
   height:3px;
   border-radius:999px;
-  background: var(--verde);
+  background:#ffffff; /* línea blanca visible */
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin:left;
   transition: transform .18s ease;
 }
-
 .nav__item.activo::after{
   transform: scaleX(1);
 }
+
 section[id]{
-  scroll-margin-top: 110px;
+  scroll-margin-top:110px;
 }
 /* ===== FIX TOPBAR: tamaño compacto sí o sí ===== */
 .topbar{
