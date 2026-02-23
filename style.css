@@ -745,19 +745,17 @@ section[id]{
   background: rgba(40,167,69,.22);
 }
 .btn--socio-grande{
-  display:block;
-  margin:14px auto 10px auto;
-  width:fit-content;
+  display:inline-block;
   background: var(--verde);
   color:white;
   font-weight:900;
-  padding:12px 18px;
+  padding:14px 22px;
   border-radius:14px;
-  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  box-shadow:0 8px 22px rgba(0,0,0,.18);
   transition:.2s;
 }
 
 .btn--socio-grande:hover{
   background: var(--verde-osc);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
