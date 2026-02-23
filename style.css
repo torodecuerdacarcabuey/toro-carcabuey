@@ -715,8 +715,8 @@ section[id]{
 
 .social-links svg{
   fill: currentColor;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 .topbar__links{
   display: flex;
