@@ -744,3 +744,20 @@ section[id]{
 .btn--socio:hover{
   background: rgba(40,167,69,.22);
 }
+.btn--socio-grande{
+  display:block;
+  margin:14px auto 10px auto;
+  width:fit-content;
+  background: var(--verde);
+  color:white;
+  font-weight:900;
+  padding:12px 18px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  transition:.2s;
+}
+
+.btn--socio-grande:hover{
+  background: var(--verde-osc);
+  transform: translateY(-1px);
+}
