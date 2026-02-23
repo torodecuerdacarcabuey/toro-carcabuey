@@ -152,12 +152,13 @@ gap:30px;
 }
 .hero__kicker{
   display:inline-block;
-  background:rgba(40,167,69,.18);
-  border:1px solid rgba(40,167,69,.45);
-  padding:6px 10px;
-  border-radius:999px;
-  font-weight:700;
-  letter-spacing:.2px;
+  background: rgba(40,167,69,.30);   /* antes .18 */
+  border: 2px solid rgba(40,167,69,.75); /* antes 1px y .45 */
+  padding: 7px 12px;                /* un pelín más */
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  box-shadow: 0 0 0 4px rgba(40,167,69,.14); /* aro extra suave */
 }
 .hero__title{
   margin:14px 0 6px;
