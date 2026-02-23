@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticia | Asociación Toro de Cuerda de Carcabuey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <a href="index.html" aria-label="Volver a inicio">
+          <div class="brand__logo">
+            <img src="assets/logo.png" alt="Logo Asociación Toro de Cuerda de Carcabuey">
+          </div>
+        </a>
+      </div>
+      <div class="topbar__links">
+        <a href="index.html#contacto" class="topbar__link">Contacto</a>
+        <a href="https://forms.gle/zuqEM6xKiEiTBCMr8" class="topbar__btn" target="_blank" rel="noopener">¡Hazte socio!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__item" href="index.html#inicio">Inicio</a>
+        <a class="nav__item" href="index.html#sobre">Sobre nosotros</a>
+        <a class="nav__item" href="index.html#noticias">Noticias</a>
+        <a class="nav__item" href="index.html#eventos">Eventos</a>
+        <a class="nav__item" href="index.html#galeria">Galería</a>
+        <a class="nav__item" href="index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <a class="link" href="index.html#noticias">← Volver a noticias</a>
+
+      <div class="card" style="margin-top:12px;">
+        <p id="postFecha" class="post__meta" style="margin-top:0;"></p>
+        <h1 id="postTitulo" style="margin:0 0 10px;"></h1>
+
+        <img id="postImg" alt="" style="display:none; width:100%; max-height:420px; object-fit:cover; border-radius:16px; border:1px solid var(--borde); margin:12px 0;" />
+
+        <div id="postContenido" class="muted" style="color:var(--texto);"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="noticias.js"></script>
+  <script>
+    function fechaBonita(iso) {
+      const [y, m, d] = iso.split("-").map(Number);
+      const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+      return `${String(d).padStart(2,"0")} ${meses[m-1]}, ${y}`;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    const tituloEl = document.getElementById("postTitulo");
+    const fechaEl = document.getElementById("postFecha");
+    const imgEl = document.getElementById("postImg");
+    const contenidoEl = document.getElementById("postContenido");
+
+    if (typeof NOTICIAS === "undefined") {
+      tituloEl.textContent = "No se pudo cargar la noticia.";
+    } else {
+      const post = NOTICIAS.find(n => n.id === id);
+
+      if (!post) {
+        tituloEl.textContent = "Noticia no encontrada.";
+        fechaEl.textContent = "";
+      } else {
+        document.title = `${post.titulo} | Asociación Toro de Cuerda de Carcabuey`;
+        tituloEl.textContent = post.titulo;
+        fechaEl.textContent = post.fecha ? fechaBonita(post.fecha) : "";
+
+        if (post.imagen) {
+          imgEl.src = post.imagen;
+          imgEl.alt = post.titulo;
+          imgEl.style.display = "block";
+        }
+
+        // contenido puede ser texto o HTML sencillo
+        contenidoEl.innerHTML = post.contenido || post.resumen || "";
+      }
+    }
+  </script>
+</body>
+</html>
