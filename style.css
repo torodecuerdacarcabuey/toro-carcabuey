@@ -716,3 +716,12 @@ section[id]{
 .social-links svg{
   fill: currentColor;
 }
+.topbar__links{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-links a{
+  color: inherit; /* hereda el color del texto de la topbar */
+}
