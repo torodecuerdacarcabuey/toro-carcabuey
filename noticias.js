@@ -45,7 +45,7 @@ Las plazas son limitadas, por lo que se recomienda realizar la inscripción con 
     titulo: "Noticia en Diario Córdoba",
     resumen: "Carcabuey vive intensa jornada del Toro de Cuerda.",
     contenido: "",
-    imagen: "assets/noticias/n2.jpg",
+    imagen: "assets/noticias/n3.jpg",
     enlace: "https://www.diariocordoba.com/cultura/2025/08/23/carcabuey-vive-intensa-jornada-toro-120878774.html"
   }
 ];
