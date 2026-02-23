@@ -22,7 +22,7 @@ const EVENTOS = [
     dia: "12",
     mes: "JUL",
     titulo: "DÍA DEL SOCIO",
-    descripcion: "Por cuarto año consecutivo celebramos el día del socio con la tradicional cgada de la burra.",
+    descripcion: "Por cuarto año consecutivo celebramos el día del socio con la tradicional cagada de la burra.",
   },
   {
     dia: "19",
