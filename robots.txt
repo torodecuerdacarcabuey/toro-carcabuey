@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://torodecuerdacarcabuey.github.io/toro-carcabuey/sitemap.xml
