@@ -23,6 +23,23 @@ De este modo, Amposta se prepara para convertirse en el epicentro nacional del t
     enlace: ""
   },
   {
+    id: "2026-02-18-avisos",
+    fecha: "2026-02-18",
+    titulo: "Visita a la ganaderia Partido de Resina",
+    resumen: "Inscripciones abiertas",
+    contenido: `
+      <p>La Asociación informa de que ya se encuentran abiertas las inscripciones para la visita a la ganadería Partido de Resina, prevista para el próximo 12 de abril.
+
+Las personas interesadas en participar en esta actividad podrán formalizar su inscripción desde hoy, con el objetivo de disfrutar de una jornada de convivencia y de acercamiento al mundo del toro en una de las ganaderías más emblemáticas del panorama nacional.
+
+Las plazas son limitadas, por lo que se recomienda realizar la inscripción con antelación para garantizar la participación en esta visita.
+</p>
+      
+    `,
+    imagen: "assets/noticias/n2.jpg",
+    enlace: ""
+  },
+  {
     id: "2026-02-01-diario-cordoba",
     fecha: "2026-02-01",
     titulo: "Noticia en Diario Córdoba",
