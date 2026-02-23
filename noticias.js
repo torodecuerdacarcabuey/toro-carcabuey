@@ -16,7 +16,7 @@ const NOTICIAS = [
     resumen: "Texto breve para que sea fácil de leer.",
     imagen: "assets/noticias/n2.jpg",
     enlace: ""
-  }
+  },
   {
     fecha: "2026-02-01",
     titulo: "Otra noticia de ejemplo",
