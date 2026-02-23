@@ -758,3 +758,11 @@ section[id]{
     flex: 0 0 auto;
   }
 }
+@media (max-width: 520px){
+  .hero{
+    min-height: 56vh;
+  }
+  .hero__content{
+    padding: 44px 0;
+  }
+}
