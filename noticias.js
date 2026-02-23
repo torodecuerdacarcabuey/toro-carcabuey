@@ -8,7 +8,7 @@ const NOTICIAS = [
     titulo: "Escribe aquí el título de la noticia",
     resumen: "Resumen corto (1–2 líneas). Si quieres poner más, se puede.",
     imagen: "assets/noticias/n1.jpg",
-    enlace: "" // opcional: "historia.html" o "https://..."
+    enlace: ""
   },
   {
     fecha: "2026-02-10",
