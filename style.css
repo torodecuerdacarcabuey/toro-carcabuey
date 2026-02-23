@@ -728,3 +728,19 @@ section[id]{
 .social-links a{
   color: inherit; /* hereda el color del texto de la topbar */
 }
+.card__actions{
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.btn--socio{
+  background: rgba(40,167,69,.14);
+  border: 1px solid rgba(40,167,69,.30);
+  color: var(--verde-osc);
+}
+
+.btn--socio:hover{
+  background: rgba(40,167,69,.22);
+}
