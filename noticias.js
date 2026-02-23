@@ -4,24 +4,31 @@
 
 const NOTICIAS = [
   {
-    fecha: "2026-02-22",
-    titulo: "Escribe aquí el título de la noticia",
-    resumen: "Resumen corto (1–2 líneas). Si quieres poner más, se puede.",
+    id: "2026-02-23-avisos",
+    fecha: "2026-02-23",
+    titulo: "Gala Anual de la Federación Española de Toro con Cuerda",
+    resumen: "El sábado dia 28 de febrero la Asociación Toro de Cuerda de Carcabuey estará presente...",
+    contenido: `
+      <p>La Asociación Toro de Cuerda de Carcabuey estará presente el próximo sábado, 28 de febrero, en la gala anual de la Federación Española de Toro con Cuerda, que se celebrará en la localidad tarraconense de Amposta.
+
+Este encuentro reunirá a representantes y aficionados de diferentes municipios de toda España vinculados a la tradición del toro con cuerda, en una velada que servirá para reconocer la labor de las asociaciones y entidades que trabajan por la conservación y promoción de esta manifestación cultural.
+
+La participación de la Asociación Toro de Cuerda de Carcabuey en esta cita supone un nuevo paso en su compromiso con la difusión y el fortalecimiento de esta tradición. Además, la gala de Amposta se convertirá en el pistoletazo de salida al XXI Congreso Nacional de Toro con Cuerda, que se celebrará el próximo mes de julio en la misma localidad.
+
+De este modo, Amposta se prepara para convertirse en el epicentro nacional del toro con cuerda durante los próximos meses, acogiendo tanto la gala anual como el esperado congreso que reunirá a numerosas delegaciones de todo el país.
+.</p>
+      
+    `,
     imagen: "assets/noticias/n1.jpg",
     enlace: ""
   },
   {
-    fecha: "2026-02-10",
-    titulo: "Otra noticia de ejemplo",
-    resumen: "Texto breve para que sea fácil de leer.",
-    imagen: "assets/noticias/n2.jpg",
-    enlace: ""
-  },
-  {
+    id: "2026-02-01-diario-cordoba",
     fecha: "2026-02-01",
-    titulo: "Carcabuey vive otra intensa jornada con el toro de cuerda como protagonista",
-    resumen: "Diario Córdoba.",
-    imagen: "assets/noticias/n3.jpg",
+    titulo: "Noticia en Diario Córdoba",
+    resumen: "Carcabuey vive intensa jornada del Toro de Cuerda.",
+    contenido: "",
+    imagen: "assets/noticias/n2.jpg",
     enlace: "https://www.diariocordoba.com/cultura/2025/08/23/carcabuey-vive-intensa-jornada-toro-120878774.html"
   }
 ];
