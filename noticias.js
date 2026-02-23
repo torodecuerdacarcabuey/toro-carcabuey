@@ -18,7 +18,7 @@ const NOTICIAS = [
     enlace: ""
   }
   {
-    fecha: "2026-02-10",
+    fecha: "2026-02-01",
     titulo: "Otra noticia de ejemplo",
     resumen: "Texto breve para que sea fácil de leer.",
     imagen: "assets/noticias/n2.jpg",
