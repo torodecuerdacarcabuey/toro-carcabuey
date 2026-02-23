@@ -278,6 +278,7 @@ document.getElementById("visor").onclick = () => {
   window.addEventListener("load", setActive);
 </script>
   <script src="eventos.js"></script>
+<script src="noticias.js"></script>
 <script>
   const cont = document.getElementById("eventsList");
   if (cont && typeof EVENTOS !== "undefined") {
@@ -295,7 +296,35 @@ document.getElementById("visor").onclick = () => {
     `).join("");
   }
 </script>
-  
+  <script>
+  const grid = document.getElementById("newsGrid");
+
+  function fechaBonita(iso) {
+    const [y, m, d] = iso.split("-").map(Number);
+    const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+    return `${String(d).padStart(2,"0")} ${meses[m-1]}, ${y}`;
+  }
+
+  if (grid && typeof NOTICIAS !== "undefined") {
+    const ordenadas = [...NOTICIAS].sort((a,b) => (b.fecha || "").localeCompare(a.fecha || ""));
+
+    grid.innerHTML = ordenadas.map(n => `
+      <article class="post">
+        ${n.imagen ? `<img src="${n.imagen}" alt="${n.titulo}" />` : ""}
+        <div class="post__body">
+          <p class="post__meta">${fechaBonita(n.fecha)}</p>
+          <h3 class="post__title">${n.titulo}</h3>
+          <p class="post__text">${n.resumen}</p>
+          ${
+            n.enlace
+              ? `<a class="btn btn--mini" href="${n.enlace}" ${n.enlace.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>Leer más</a>`
+              : `<a class="btn btn--mini" href="#contacto">Leer más</a>`
+          }
+        </div>
+      </article>
+    `).join("");
+  }
+</script>
   <script>
   const form = document.getElementById("contactForm");
   const btn = document.getElementById("btnEnviar");
