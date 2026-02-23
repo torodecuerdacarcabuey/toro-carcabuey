@@ -19,9 +19,9 @@ const NOTICIAS = [
   },
   {
     fecha: "2026-02-01",
-    titulo: "Otra noticia de ejemplo",
-    resumen: "Texto breve para que sea fácil de leer.",
-    imagen: "assets/noticias/n2.jpg",
+    titulo: "Carcabuey vive otra intensa jornada con el toro de cuerda como protagonista",
+    resumen: "Diario Córdoba.",
+    imagen: "assets/noticias/n3.jpg",
     enlace: "https://www.diariocordoba.com/cultura/2025/08/23/carcabuey-vive-intensa-jornada-toro-120878774.html"
   }
 ];
