@@ -314,11 +314,11 @@ document.getElementById("visor").onclick = () => {
           <p class="post__meta">${fechaBonita(n.fecha)}</p>
           <h3 class="post__title">${n.titulo}</h3>
           <p class="post__text">${n.resumen}</p>
-          ${
-            n.enlace
-              ? `<a class="btn btn--mini" href="${n.enlace}" ${n.enlace.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>Leer más</a>`
-              : `<a class="btn btn--mini" href="#contacto">Leer más</a>`
-          }
+        ${
+  (n.enlace && n.enlace.trim() !== "")
+    ? `<a class="btn btn--mini" href="${n.enlace}" target="_blank" rel="noopener">Leer más</a>`
+    : `<a class="btn btn--mini" href="noticia.html?id=${encodeURIComponent(n.id)}">Leer más</a>`
+        }
         </div>
       </article>
     `).join("");
