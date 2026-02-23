@@ -24,6 +24,12 @@ const EVENTOS = [
     titulo: "DÍA DEL SOCIO",
     descripcion: "Por cuarto año consecutivo celebramos el día del socio con la tradicional cgada de la burra.",
   },
+  {
+    dia: "19",
+    mes: "AGOST",
+    titulo: "DÍA DEL NIÑO",
+    descripcion: "Tradicional bueyada infantil, carretón Guijarrito, castillos hinchables y algunas sorpresas más",
+  },
    {
     dia: "22",
     mes: "AGOST",
