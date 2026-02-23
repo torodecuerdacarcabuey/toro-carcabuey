@@ -714,5 +714,5 @@ section[id]{
 }
 
 .social-links svg{
-  fill:white;
+  fill: currentColor;
 }
