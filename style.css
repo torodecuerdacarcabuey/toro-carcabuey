@@ -964,3 +964,40 @@ section[id]{
 .lightbox__close { top: 16px; right: 16px; }
 .lightbox__prev  { left: 16px; top: 50%; transform: translateY(-50%); }
 .lightbox__next  { right: 16px; top: 50%; transform: translateY(-50%); }
+/* Lightbox: por defecto oculto, se muestra al abrir */
+.lightbox { display: none; }
+.lightbox.is-open { display: flex; }
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.8);
+  padding: 24px;
+}
+
+.lightbox__img{
+  max-width: min(1000px, 92vw);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.lightbox__btn{
+  position: absolute;
+  border: 0;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lightbox__close { top: 16px; right: 16px; }
+.lightbox__prev  { left: 16px; top: 50%; transform: translateY(-50%); }
+.lightbox__next  { right: 16px; top: 50%; transform: translateY(-50%); }
