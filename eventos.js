@@ -19,7 +19,7 @@ const EVENTOS = [
     descripcion: "Amposta (Tarragona)",
   },
    {
-    dia: "12",
+    dia: "11",
     mes: "JUL",
     titulo: "DÍA DEL SOCIO",
     descripcion: "Por cuarto año consecutivo celebramos el día del socio con la tradicional cagada de la burra.",
