@@ -32,9 +32,11 @@ De este modo, Amposta se prepara para convertirse en el epicentro nacional del t
     resumen: "Inscripciones abiertas",
     contenido: `
       <p>La Asociación informa de que ya se encuentran abiertas las inscripciones para la visita a la ganadería Partido de Resina, prevista para el próximo 12 de abril.
-
+      </p>
+<p>
 Las personas interesadas en participar en esta actividad podrán formalizar su inscripción desde hoy, con el objetivo de disfrutar de una jornada de convivencia y de acercamiento al mundo del toro en una de las ganaderías más emblemáticas del panorama nacional.
-
+</p>
+<p>
 Las plazas son limitadas, por lo que se recomienda realizar la inscripción con antelación para garantizar la participación en esta visita.
 </p>
       
