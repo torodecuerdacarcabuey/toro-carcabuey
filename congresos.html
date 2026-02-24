@@ -132,6 +132,15 @@
 
     </div>
   </section>
+  <!-- VISOR GRANDE (Lightbox) -->
+<div id="visor" class="lightbox" aria-hidden="true">
+  <button class="lightbox__btn lightbox__close" aria-label="Cerrar">✕</button>
+  <button class="lightbox__btn lightbox__prev" aria-label="Anterior">‹</button>
+
+  <img id="imgGrande" class="lightbox__img" alt="">
+
+  <button class="lightbox__btn lightbox__next" aria-label="Siguiente">›</button>
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const visor = document.getElementById("visor");
