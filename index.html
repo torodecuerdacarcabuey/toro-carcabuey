@@ -257,16 +257,79 @@
 </div>
 
 <script>
-document.querySelectorAll(".gallery img").forEach(img => {
-  img.onclick = () => {
-    document.getElementById("visor").style.display = "flex";
-    document.getElementById("imgGrande").src = img.src;
-  };
-});
+(function () {
+  const visor = document.getElementById("visor");
+  const imgGrande = document.getElementById("imgGrande");
+  const thumbs = Array.from(document.querySelectorAll(".gallery img"));
 
-document.getElementById("visor").onclick = () => {
-  document.getElementById("visor").style.display = "none";
-};
+  if (!visor || !imgGrande || thumbs.length === 0) return;
+
+  const btnClose = visor.querySelector(".lightbox__close");
+  const btnPrev  = visor.querySelector(".lightbox__prev");
+  const btnNext  = visor.querySelector(".lightbox__next");
+
+  let currentIndex = 0;
+
+  function openAt(index){
+    currentIndex = (index + thumbs.length) % thumbs.length;
+    const t = thumbs[currentIndex];
+    imgGrande.src = t.src;
+    imgGrande.alt = t.alt || "Imagen de la galería";
+    visor.classList.add("is-open");
+    visor.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function close(){
+    visor.classList.remove("is-open");
+    visor.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  function prev(){ openAt(currentIndex - 1); }
+  function next(){ openAt(currentIndex + 1); }
+
+  // Click en miniaturas abre en esa foto
+  thumbs.forEach((img, i) => {
+    img.addEventListener("click", () => openAt(i));
+  });
+
+  // Botones
+  btnClose.addEventListener("click", (e) => { e.stopPropagation(); close(); });
+  btnPrev.addEventListener("click",  (e) => { e.stopPropagation(); prev(); });
+  btnNext.addEventListener("click",  (e) => { e.stopPropagation(); next(); });
+
+  // Click fuera de la imagen = cerrar
+  visor.addEventListener("click", (e) => {
+    if (e.target === visor) close();
+  });
+
+  // Teclado
+  window.addEventListener("keydown", (e) => {
+    if (!visor.classList.contains("is-open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") prev();
+    if (e.key === "ArrowRight") next();
+  });
+
+  // Swipe móvil
+  let xStart = null;
+  imgGrande.addEventListener("touchstart", (e) => {
+    xStart = e.touches[0].clientX;
+  }, {passive:true});
+
+  imgGrande.addEventListener("touchend", (e) => {
+    if (xStart === null) return;
+    const xEnd = e.changedTouches[0].clientX;
+    const dx = xEnd - xStart;
+    xStart = null;
+
+    if (Math.abs(dx) > 40) {
+      if (dx > 0) prev();
+      else next();
+    }
+  }, {passive:true});
+})();
 </script>
  <script>
   const navLinks = Array.from(document.querySelectorAll("[data-nav]"));
