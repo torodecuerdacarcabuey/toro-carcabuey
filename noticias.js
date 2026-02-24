@@ -10,11 +10,14 @@ const NOTICIAS = [
     resumen: "El sábado dia 28 de febrero la Asociación Toro de Cuerda de Carcabuey estará presente...",
     contenido: `
       <p>La Asociación Toro de Cuerda de Carcabuey estará presente el próximo sábado, 28 de febrero, en la gala anual de la Federación Española de Toro con Cuerda, que se celebrará en la localidad tarraconense de Amposta.
-
+      </p>
+<p>
 Este encuentro reunirá a representantes y aficionados de diferentes municipios de toda España vinculados a la tradición del toro con cuerda, en una velada que servirá para reconocer la labor de las asociaciones y entidades que trabajan por la conservación y promoción de esta manifestación cultural.
-
+</p>
+<p>
 La participación de la Asociación Toro de Cuerda de Carcabuey en esta cita supone un nuevo paso en su compromiso con la difusión y el fortalecimiento de esta tradición. Además, la gala de Amposta se convertirá en el pistoletazo de salida al XXI Congreso Nacional de Toro con Cuerda, que se celebrará el próximo mes de julio en la misma localidad.
-
+</p>
+<p>
 De este modo, Amposta se prepara para convertirse en el epicentro nacional del toro con cuerda durante los próximos meses, acogiendo tanto la gala anual como el esperado congreso que reunirá a numerosas delegaciones de todo el país.
 .</p>
       
