@@ -1001,3 +1001,7 @@ section[id]{
 .lightbox__close { top: 16px; right: 16px; }
 .lightbox__prev  { left: 16px; top: 50%; transform: translateY(-50%); }
 .lightbox__next  { right: 16px; top: 50%; transform: translateY(-50%); }
+.gallery img {
+  cursor: pointer;
+  pointer-events: auto;
+}
