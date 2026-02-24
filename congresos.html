@@ -133,7 +133,7 @@
     </div>
   </section>
 <script>
-(function () {
+document.addEventListener("DOMContentLoaded", () => {
   const visor = document.getElementById("visor");
   const imgGrande = document.getElementById("imgGrande");
   if (!visor || !imgGrande) return;
@@ -142,10 +142,6 @@
   const btnPrev  = visor.querySelector(".lightbox__prev");
   const btnNext  = visor.querySelector(".lightbox__next");
 
-  // Soporta múltiples galerías en la misma página
-  const galleries = Array.from(document.querySelectorAll(".gallery"));
-
-  // Estado: galería actual e índice actual
   let currentImages = [];
   let index = 0;
 
@@ -173,36 +169,30 @@
   function prev() { openAt(index - 1); }
   function next() { openAt(index + 1); }
 
-  // Abrir al click en cualquier imagen de cualquier galería
-  galleries.forEach((gallery) => {
-    const imgs = Array.from(gallery.querySelectorAll("img"));
-    imgs.forEach((img, i) => {
-      img.style.cursor = "pointer";
-      img.addEventListener("click", () => {
-        currentImages = imgs; // IMPORTANTÍSIMO: se queda en la galería actual
-        openAt(i);
-      });
-    });
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest(".gallery img");
+    if (img) {
+      const gallery = img.closest(".gallery");
+      currentImages = Array.from(gallery.querySelectorAll("img"));
+      const i = currentImages.indexOf(img);
+      openAt(i);
+      return;
+    }
+
+    if (e.target === visor) close();
   });
 
-  // Botones
   btnClose && btnClose.addEventListener("click", close);
   btnPrev  && btnPrev.addEventListener("click", prev);
   btnNext  && btnNext.addEventListener("click", next);
 
-  // Cerrar al clicar fuera de la imagen (en el fondo)
-  visor.addEventListener("click", (e) => {
-    if (e.target === visor) close();
-  });
-
-  // Teclado
   document.addEventListener("keydown", (e) => {
     if (!visor.classList.contains("is-open")) return;
     if (e.key === "Escape") close();
     if (e.key === "ArrowLeft") prev();
     if (e.key === "ArrowRight") next();
   });
-})();
+});
 </script>
 </body>
 </html>
