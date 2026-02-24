@@ -897,3 +897,33 @@ section[id]{
     height: 26px;
   }
 }
+/* ===== TOP BAR PERFECTA EN MÓVIL ===== */
+@media (max-width: 520px){
+
+  .topbar__inner{
+    padding: 8px 12px !important;
+    height:auto !important;
+  }
+
+  .brand__logo img{
+    height:50px !important;
+    width:auto !important;
+    max-height:50px !important;
+    object-fit:contain;
+  }
+
+  .social-links{
+    gap:12px;
+    margin-right:8px;
+  }
+
+  .social-links svg{
+    width:26px;
+    height:26px;
+  }
+
+  .topbar__btn{
+    padding:8px 12px;
+    font-size:.9rem;
+  }
+}
